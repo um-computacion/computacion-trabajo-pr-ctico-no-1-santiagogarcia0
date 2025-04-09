@@ -1,29 +1,30 @@
 import unittest
 
-# def decimal_to_roman(n):
-#     valores = [
-#         (1000, "M"),
-#         (900, "CM"),
-#         (500, "D"),
-#         (400, "CD"),
-#         (100, "C"),
-#         (90, "XC"),
-#         (50, "L"),
-#         (40, "XL"),
-#         (10, "X"),
-#         (9, "IX"),
-#         (5, "V"),
-#         (4, "IV"),
-#         (1, "I")
-#     ]
+def decimal_to_roman(n):
+    valores = [
+        (1000, "M"),
+        (900, "CM"),
+        (500, "D"),
+        (400, "CD"),
+        (100, "C"),
+        (90, "XC"),
+        (50, "L"),
+        (40, "XL"),
+        (10, "X"),
+        (9, "IX"),
+        (5, "V"),
+        (4, "IV"),
+        (1, "I")
+    ]
     
-#     roman_numeral = "" 
+    roman_numeral = "" 
     
-#     for valor, simbolo in valores:
-#         while n >= valor:
-#             roman_numeral += simbolo 
-#             n -= valor
-#     return roman_numeral
+    for valor, simbolo in valores:
+        while n >= valor:
+            roman_numeral += simbolo 
+            n -= valor
+    return roman_numeral
+
 
 class TestDecimalToRoman(unittest.TestCase):
     def test_1(self):
